@@ -54,7 +54,7 @@
     "warning_level": "VERBOSE",
     "generate_exports": true,
     "language_in": "ECMASCRIPT5_STRICT",
-    "output_wrapper": "(function(){%output%}).call(window);",
+    "output_wrapper": "(function(){'use strict'; %output%}).call(window);",
     "export_local_property_definitions": true,
     "use_types_for_optimization": true,
     "manage_closure_dependencies": true
