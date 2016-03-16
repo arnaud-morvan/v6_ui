@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[c2corg.v6]
+[camptocamporg.v6]
 source_file = .build/locale/c2corg_ui-client.pot
 source_lang = en
 type = PO
