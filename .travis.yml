@@ -13,12 +13,22 @@ install:
 
 before_script:
 - scripts/travis-api-server.sh
+- if [ ${TRAVIS_REPO_SLUG}-${TRAVIS_PULL_REQUEST} = c2corg/v6_ui-false ] ; then cp .transifexrc $HOME/.transifexrc; fi
 
 script:
 - make -f config/travis check
 
 after_failure:
   cat v6_api/nohup.out
+
+deploy:
+- provider: script
+  script: make transifex-send
+  skip_cleanup: true
+  on:
+    repo: c2corg/v6_ui
+    branch: master
+    node: "0.10"
 
 notifications:
   email: false
