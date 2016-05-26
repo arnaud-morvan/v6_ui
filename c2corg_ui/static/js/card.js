@@ -27,10 +27,8 @@ app.cardDirective = function($compile, $templateCache) {
       'doc': '=appCardDoc',
       'disableClick': '=appCardDisableClick'
     },
-    link: function(scope, element, attrs) {
-      var doc = scope['cardCtrl']['doc'];
-      var type = app.utils.getDoctype(doc['type']);
-      element.html(template(type));
+    link: function(scope, element, attrs, ctrl) {
+      element.html(template(ctrl.type));
       $compile(element.contents())(scope);
     }
   };
@@ -43,8 +41,8 @@ app.module.directive('appCard', app.cardDirective);
 /**
  * @param {angularGettext.Catalog} gettextCatalog Gettext catalog.
  * @constructor
- * @export
  * @struct
+ * @export
  * @ngInject
  */
 app.CardController = function(gettextCatalog) {
@@ -74,12 +72,18 @@ app.CardController = function(gettextCatalog) {
   this.disableClick;
 
   /**
+   * @type {string}
+   * @export
+   */
+  this.type = app.utils.getDoctype(this.doc['type']);
+
+  /**
    * @type {Object}
    * @export
    */
-  this.locale = this.doc['locales'][0];
-  for (var i = 0, n = this.doc['locales'].length; i < n; i++) {
-    var l = this.doc['locales'][i];
+  this.locale = this.doc.locales[0];
+  for (var i = 0, n = this.doc.locales.length; i < n; i++) {
+    var l = this.doc.locales[i];
     if (l['lang'] === this.lang) {
       this.locale = l;
       break;
@@ -104,9 +108,7 @@ app.CardController.prototype.translate = function(str) {
 app.CardController.prototype.openCardPage = function() {
   if (!this.disableClick) {
     window.location.href = app.utils.buildDocumentUrl(
-      app.utils.getDoctype(this.doc['type']),
-      this.doc['document_id'],
-      this.doc['locales'][0]['lang']);
+      this.type, this.doc.document_id, this.doc.locales[0]['lang']);
   }
 };
 
