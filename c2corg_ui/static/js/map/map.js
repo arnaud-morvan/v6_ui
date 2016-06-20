@@ -48,7 +48,9 @@ app.mapDirective = function() {
     controller: 'AppMapController',
     controllerAs: 'mapCtrl',
     bindToController: true,
-    template: '<div class="map" ngeo-map=mapCtrl.map></div>'
+    template: '<div class="map" ngeo-map="::mapCtrl.map">' +
+      '<app-geolocation app-geolocation-map="::mapCtrl.map"></app-geolocation>' +
+    '</div>'
   };
 };
 
