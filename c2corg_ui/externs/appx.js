@@ -280,3 +280,12 @@ appx.RecentOutings;
  * }}
  */
 appx.AllRoutes;
+
+
+/**
+ * @typedef {{
+ *   discourseUrl: string,
+ *   topicId: number
+ * }}
+ */
+appx.DiscourseEmbedded;
