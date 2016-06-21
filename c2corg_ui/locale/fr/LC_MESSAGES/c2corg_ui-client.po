@@ -113,15 +113,15 @@ msgstr "Comparaison des documents"
 msgid "Contact"
 msgstr "Contact"
 
-#: c2corg_ui/static/partials/suggestion_empty.html
+#: c2corg_ui/static/partials/suggestions/empty.html
 msgid "Create a new outing"
 msgstr "Créer une sortie"
 
-#: c2corg_ui/static/partials/suggestion_empty.html
+#: c2corg_ui/static/partials/suggestions/empty.html
 msgid "Create a new route"
 msgstr "Créer un itinéraire"
 
-#: c2corg_ui/static/partials/suggestion_empty.html
+#: c2corg_ui/static/partials/suggestions/empty.html
 msgid "Create a new waypoint"
 msgstr "Créer un point de passage"
 
@@ -217,6 +217,10 @@ msgstr "Adresse email"
 #: c2corg_ui/templates/waypoint/helpers/detailed_waypoint_attributes.html
 msgid "Equipment"
 msgstr "Équipement"
+
+#: c2corg_ui/templates/i18n.html
+msgid "Failed loading this map background"
+msgstr ""
 
 #: c2corg_ui/static/js/apiservice.js
 msgid "Failed to associate document:"
@@ -371,7 +375,7 @@ msgstr "Pas de description disponible"
 msgid "No maps associated"
 msgstr "Aucune carte associée"
 
-#: c2corg_ui/static/partials/suggestion_empty.html
+#: c2corg_ui/static/partials/suggestions/empty.html
 msgid "No results"
 msgstr "Aucun résultat"
 
@@ -560,6 +564,11 @@ msgstr ""
 msgid "Welcome to Camptocamp.org"
 msgstr "Bienvenue sur Camptocamp.org"
 
+#: c2corg_ui/templates/outing/edit.html c2corg_ui/templates/route/edit.html
+#: c2corg_ui/templates/waypoint/edit.html
+msgid "What is missing?"
+msgstr ""
+
 #: c2corg_ui/templates/helpers/view.html
 #: c2corg_ui/templates/outing/filters.html
 #: c2corg_ui/templates/route/filters.html
@@ -570,6 +579,14 @@ msgstr "Oui"
 #: c2corg_ui/templates/helpers/view.html
 msgid "You are viewing an archived version of this document."
 msgstr "Vous consultez une ancienne version de ce document."
+
+#: c2corg_ui/templates/route/edit.html
+msgid "You can add associated routes and waypoints by searching in the field."
+msgstr ""
+
+#: c2corg_ui/templates/waypoint/edit.html
+msgid "You can add associated waypoints by searching in the field."
+msgstr ""
 
 #: c2corg_ui/static/partials/imageuploader.html
 msgid "You can add geolocation info by typing in the input field."
@@ -1031,6 +1048,10 @@ msgid "es"
 msgstr "espagnol"
 
 #: c2corg_ui/templates/i18n.html
+msgid "esri"
+msgstr "Esri World Topo Map"
+
+#: c2corg_ui/templates/i18n.html
 msgid "eu"
 msgstr "basque"
 
@@ -1223,6 +1244,14 @@ msgstr "Cascade de glace"
 #: c2corg_ui/templates/route/edit.html
 msgid "ice_rating"
 msgstr "Cotation glace"
+
+#: c2corg_ui/templates/i18n.html
+msgid "ign maps"
+msgstr "Cartes IGN"
+
+#: c2corg_ui/templates/i18n.html
+msgid "ign ortho"
+msgstr "Photos aériennes IGN"
 
 #: c2corg_ui/templates/i18n.html
 msgid "imported from v4"
@@ -1461,6 +1490,10 @@ msgstr "orientation"
 #: c2corg_ui/templates/waypoint/edit.html
 msgid "orientations"
 msgstr "orientations"
+
+#: c2corg_ui/templates/i18n.html
+msgid "osm"
+msgstr "OpenStreetMap"
 
 #: c2corg_ui/templates/outing/view.html
 msgid "outing"
@@ -1791,6 +1824,10 @@ msgstr "Résumé"
 msgid "summit"
 msgstr "sommet"
 
+#: c2corg_ui/templates/i18n.html
+msgid "swisstopo"
+msgstr "Cartes Swisstopo"
+
 #: c2corg_ui/templates/sidemenu.html
 msgid "terms of use"
 msgstr "Conditions d'utilisation"
@@ -1923,4 +1960,8 @@ msgstr "oui"
 
 #: c2corg_ui/templates/outing/edit.html
 msgid "you can look up for users that were with you during the outing."
+msgstr ""
+
+#: c2corg_ui/static/partials/alert.html
+msgid "{{alertCtrl.title}}"
 msgstr ""

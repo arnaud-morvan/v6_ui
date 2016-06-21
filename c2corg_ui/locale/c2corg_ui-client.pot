@@ -117,15 +117,15 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: c2corg_ui/static/partials/suggestion_empty.html
+#: c2corg_ui/static/partials/suggestions/empty.html
 msgid "Create a new outing"
 msgstr ""
 
-#: c2corg_ui/static/partials/suggestion_empty.html
+#: c2corg_ui/static/partials/suggestions/empty.html
 msgid "Create a new route"
 msgstr ""
 
-#: c2corg_ui/static/partials/suggestion_empty.html
+#: c2corg_ui/static/partials/suggestions/empty.html
 msgid "Create a new waypoint"
 msgstr ""
 
@@ -221,6 +221,10 @@ msgstr ""
 #: c2corg_ui/templates/waypoint/edit.html
 #: c2corg_ui/templates/waypoint/helpers/detailed_waypoint_attributes.html
 msgid "Equipment"
+msgstr ""
+
+#: c2corg_ui/templates/i18n.html
+msgid "Failed loading this map background"
 msgstr ""
 
 #: c2corg_ui/static/js/apiservice.js
@@ -381,7 +385,7 @@ msgstr ""
 msgid "No maps associated"
 msgstr ""
 
-#: c2corg_ui/static/partials/suggestion_empty.html
+#: c2corg_ui/static/partials/suggestions/empty.html
 msgid "No results"
 msgstr ""
 
@@ -575,6 +579,12 @@ msgstr ""
 msgid "Welcome to Camptocamp.org"
 msgstr ""
 
+#: c2corg_ui/templates/outing/edit.html
+#: c2corg_ui/templates/route/edit.html
+#: c2corg_ui/templates/waypoint/edit.html
+msgid "What is missing?"
+msgstr ""
+
 #: c2corg_ui/templates/helpers/view.html
 #: c2corg_ui/templates/outing/filters.html
 #: c2corg_ui/templates/route/filters.html
@@ -584,6 +594,14 @@ msgstr ""
 
 #: c2corg_ui/templates/helpers/view.html
 msgid "You are viewing an archived version of this document."
+msgstr ""
+
+#: c2corg_ui/templates/route/edit.html
+msgid "You can add associated routes and waypoints by searching in the field."
+msgstr ""
+
+#: c2corg_ui/templates/waypoint/edit.html
+msgid "You can add associated waypoints by searching in the field."
 msgstr ""
 
 #: c2corg_ui/static/partials/imageuploader.html
@@ -1053,6 +1071,10 @@ msgid "es"
 msgstr ""
 
 #: c2corg_ui/templates/i18n.html
+msgid "esri"
+msgstr ""
+
+#: c2corg_ui/templates/i18n.html
 msgid "eu"
 msgstr ""
 
@@ -1247,6 +1269,14 @@ msgstr ""
 #: c2corg_ui/templates/route/create_edit_summary.html
 #: c2corg_ui/templates/route/edit.html
 msgid "ice_rating"
+msgstr ""
+
+#: c2corg_ui/templates/i18n.html
+msgid "ign maps"
+msgstr ""
+
+#: c2corg_ui/templates/i18n.html
+msgid "ign ortho"
 msgstr ""
 
 #: c2corg_ui/templates/i18n.html
@@ -1489,6 +1519,10 @@ msgstr ""
 #: c2corg_ui/templates/route/create_edit_summary.html
 #: c2corg_ui/templates/waypoint/edit.html
 msgid "orientations"
+msgstr ""
+
+#: c2corg_ui/templates/i18n.html
+msgid "osm"
 msgstr ""
 
 #: c2corg_ui/templates/outing/view.html
@@ -1826,6 +1860,10 @@ msgstr ""
 msgid "summit"
 msgstr ""
 
+#: c2corg_ui/templates/i18n.html
+msgid "swisstopo"
+msgstr ""
+
 #: c2corg_ui/templates/sidemenu.html
 msgid "terms of use"
 msgstr ""
@@ -1960,4 +1998,8 @@ msgstr ""
 
 #: c2corg_ui/templates/outing/edit.html
 msgid "you can look up for users that were with you during the outing."
+msgstr ""
+
+#: c2corg_ui/static/partials/alert.html
+msgid "{{alertCtrl.title}}"
 msgstr ""
